@@ -1,10 +1,12 @@
+package com.zhiang.current;
+
 import java.util.*;
 
 
 /**
  * ¼ÆÊ±Æ÷Àà
  */
-class TimePrinter extends Thread {
+public class TimePrinter extends Thread {
 
     int pauseTime;
     String name;
@@ -15,15 +17,15 @@ class TimePrinter extends Thread {
     }
 
     public void run() {
-        while(true) {
+        //while(true) {
             try {
                 System.out.println(name + ":" + new
                         Date(System.currentTimeMillis()));
-                Thread.sleep(pauseTime);
+                //Thread.sleep(pauseTime);
             } catch(Exception e) {
                 System.out.println(e);
             }
-        }
+       // }
     }
 
 
